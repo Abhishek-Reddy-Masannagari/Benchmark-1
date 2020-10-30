@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
+/* GLOBAL 
+------------------>*/
+
+body{
+
+    /* z-index: 0; */
+    font-family: "Circular";
+    /* background: linear-gradient(135deg, rgb(9, 65, 87), rgb(0, 0, 0)); */
+   
+    
+}
+
+section.page{
+    display: none;
+}
+
+section.page.displayShow{
+    display: block;
+    overflow: hidden;
+}
+
+/* Page Structure
+------------------>*/
+#sidebar{
+    font-family: 'Montserrat', sans-serif;
+    position: fixed; 
+    height: 90vh;
+    background-color: #050505;
+    z-index: 1;
+}
+
+#mainpage{
+    margin-left: 16.6%;
+    width: 90vh;
+    
+    /* position: relative; */
+    /* background-color: rgb(9, 65, 87); */
+    background: linear-gradient(135deg, rgb(9, 65, 87), rgb(0, 0, 0));
+    
+}
+
+/* #mainpage::before {
+    content: "";
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(65,65,65);
+    background: linear-gradient(132deg, rgba(65,65,65,0) 0%, rgba(4,4,4,0.2858018207282913) 36%, rgba(0,0,0,0.8936449579831933) 100%);
+} */
+
+#player{
+    width: 100vw;
+    height: 10%;
+    background-color:#282828;
+}
+
+
+/*Sidebar
+---------->*/
+div.sidebar-top{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 70%;
+}
+.sidebar-top-text{
+    
+    display: flex;
+    flex-direction: row;
+    
+    color:rgb(141, 140, 140);
+}
+
+
+
+.sidebar-top-text .sidebar-top-icons{
+    margin-right: 1rem;
+    color: rgb(75, 75, 75);
+}
+img#logo{
+    margin-bottom: 2rem;
+    width: 70%;
+   
+}
+
+#sidebar a{
+    text-decoration: none;
+}
+
+#sidebar .sidebar-top-text:nth-of-type(1){
+    z-index: 100;
+}
+
+#sidebar .sidebar-middle{
+    margin-bottom: 15rem;
+    color:#b3b3b3;
+}
+
+#sidebar .create-icon{
+    width: 32px;
+    height: 32px;
+    background-color: gray;
+}
+
+#sidebar .create-icon2{
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, rgb(69, 10, 245), rgb(196, 239, 217));
+}
+
+.add-playlist{
+    height: 180px;
+}
+ul{
+    padding: 0px 0px 0px 10px;
+    
+}
+
+ul li{
+    list-style: none;
+}
+/*  MAIN PAGE
+------------>*/
+#mainpage section.page>section:nth-of-type(1){
+    margin-top:8%;  /*TODO this can be change*/
+
+}
+#mainpage section{
+    margin-left: 1%;
+    margin-top: 3%;  /*TODO this can be change*/
+    color:white;
+}
+/* Main Navbar
+-----------> */
+
+#mainpage nav ul li {
+    font-size: .8rem;
+   
+}
+
+
+
+
+
+.dropdown button{
+    opacity: 70%;
+    border-radius: 10rem;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+}
+.dropdown-menu{
+    background-color:rgb(33, 37, 41) ;
+    color: white;
+}
+nav .dropdown-menu a{
+    color:white;
+}
+/* Cards
+---------------> */
+
+.card{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    text-shadow: 10px 10px 10px #000000; 
+   
+}
+
+
+.card .section-title{
+    font-weight: bold;
+}
+
+.round-button {
+   
+	box-sizing: border-box;
+	display:none;
+	width:50px;
+	height:50px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	/* border: 6px solid #fff; */
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align:center;
+	text-decoration:none;
+	background-color: #1DB954;
+	font-size:20px;
+	font-weight:bold;
+    transition: all 0.3s ease;
+    
+    position: absolute;
+    z-index: 100;
+    bottom:80px;
+    right:7px;
+    
+}
+
+.player-title p:nth-of-type(1){
+    margin: 0;
+    color: #DEF8FF;
+    font-family: 'Montserrat', sans-serif;
+    /* box-shadow: 0px 0px 10px #070707; */
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.player-title p:nth-of-type(2){
+    color: rgb(134, 131, 131);
+    margin-bottom: 1px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.hide{
+    display: none;
+}
+
+#player i:focus {
+    outline: none;
+}
+
+/*Modal*/
+
+.modal-dialog{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.modal-content{
+    background-color: rgb(40, 40, 40);;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+/*PLAYER*/
+
+#player .right{
+    margin-bottom: 80px;
+}
+
+#audioplayer{
+    margin-bottom: 50px;
+}
+
+#timeline{
+	width: 300px;
+	height: 8px;
+	background: #c2c2c2;
+	
+	float: left;
+	border-radius: 15px;
+}
+
+#playhead{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+    /* margin-top: 1px; */
+    margin-bottom: 100px;
+	background: #1DB954;
+}
+
+#pButton{
+    background-color:transparent;
+	height:20px;
+	width: 20px;
+	border: none;
+	background-size: 50% 50%;
+    background-position: center;
+    margin-top: 10px;
+}
+.play{background: url('../assets/play-solid.svg') no-repeat;} /*TODO change the colors*/
+.pause{background: url('../assets/pause-solid.svg') no-repeat;}
